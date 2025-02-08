@@ -9,6 +9,7 @@ const sections = [
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
   { id: "services", label: "Services" },
+  { id: "projects", label: "Projects" }, 
   { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
 ]
@@ -19,13 +20,21 @@ export default function FloatingNav() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        let newActiveSection = activeSection
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id)
+            newActiveSection = entry.target.id
           }
         })
+
+        if (newActiveSection !== activeSection) {
+          setActiveSection(newActiveSection)
+        }
       },
-      { threshold: 0.5 },
+      {
+        threshold: window.innerWidth < 768 ? 0.2 : 0.5, 
+        rootMargin: window.innerWidth < 768 ? "0px 0px -30% 0px" : "0px 0px -40% 0px",
+      }
     )
 
     sections.forEach(({ id }) => {
@@ -34,7 +43,7 @@ export default function FloatingNav() {
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [activeSection])
 
   return (
     <motion.div
@@ -67,4 +76,3 @@ export default function FloatingNav() {
     </motion.div>
   )
 }
-

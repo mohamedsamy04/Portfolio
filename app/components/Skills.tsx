@@ -35,7 +35,7 @@ const skills = [
   {
     icon: Database,
     name: "Database",
-    tech: "SQL, ASP.NET",
+    tech: "SQL",
     description: "Managing and querying structured data with SQL databases .",
     color: "text-purple-500",
   },

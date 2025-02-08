@@ -26,7 +26,7 @@ export default function Projects() {
       {
         title: "Sales Management System",
         description: "A powerful sales management system to streamline sales processes, track performance, and manage customer relationships efficiently.",
-        link: "https://mohamedsamy04.github.io/SmartMoon/",
+        link: "https://mohamedsamy04.github.io/test/",
         image: "/project4.png"
       },
       {

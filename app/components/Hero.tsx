@@ -88,7 +88,7 @@ export default function Hero() {
               </a>
             </div>
             <motion.a
-              href="/public/Cv.pdf"
+              href="/Cv.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05 }}
@@ -146,3 +146,8 @@ export default function Hero() {
     </section>
   )
 }
+
+
+
+
+

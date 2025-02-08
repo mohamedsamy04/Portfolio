@@ -12,7 +12,7 @@ export default function Education() {
       institution: "Faculty of Computers and Information, Kafr El Sheikh University",
       period: "Expected 2026",
       achievements: [
-        "Current GPA: 3.1/4.00",
+        "Current GPA: 3.3/4.00",
         "Location: Kafr El Sheikh, Egypt",
         "Focusing on modern web technologies and development practices",
       ],
