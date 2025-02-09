@@ -33,8 +33,7 @@ export default function Contact() {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
     try {
-      // Here you would typically send the form data to your backend
-      await new Promise((resolve) => setTimeout(resolve, 1000)) // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1000)) 
       setSubmitSuccess(true)
       reset()
       setTimeout(() => setSubmitSuccess(false), 3000)

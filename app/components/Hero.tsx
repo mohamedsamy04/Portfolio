@@ -30,12 +30,10 @@ export default function Hero() {
       id="hero"
       className="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-indigo-900 dark:to-purple-900"
     >
-      {/* Programming-themed Background */}
       <div className="absolute inset-0 z-0">
         <CodePattern />
       </div>
 
-      {/* Animated Gradient */}
       <div className="absolute inset-0 z-0 opacity-30">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 animate-gradient-x"></div>
       </div>
@@ -134,7 +132,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Decorative Elements */}
       <motion.div
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}
